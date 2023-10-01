@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fuggles&family=Pixelify+Sans&family=Raleway:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fuggles&family=Pixelify+Sans&family=Raleway:wght@100&family=Tilt+Prism&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Temperature Converter App</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="temperature-converter">
+      <h1 class="title">Temperature Converter</h1>
+      <div class="result">
+        <span class="result-heading" style="color:rgb(175, 233, 245);font-size: larger;">Result</span><span
+          id="sp1"></span>
+        <h2 class="celsius-value" id="celsius" style="color:rgb(181, 237, 237);font-family: 'Tilt Prism', cursive;">
+        </h2>
+      </div>
+      <div class="degree-type">
+        <div class="degree-field">
+          <label for="degree" style="font-weight: bold;color:white"><text
+              style="color:rgb(175, 233, 245);font-size: 3vh;font-family: 'Josefin Sans', sans-serif;">Degrees</text></label>
+          <input type="number" name="degree" id="degree">
+        </div>
+        <div class="temp-field">
+          <label for="temp-type"
+            style="font-weight: bolder;color:rgb(175, 233, 245);font-size: 3vh;font-family: 'Josefin Sans', sans-serif;">Type</label>
+          <select name="temperatures" id="temp-type" autocomplete="on">
+            <option id="fahrenheit" value="fahrenheit"><text
+                style="color:white;background-color: white;">Fahrenheit</text></option>
+            <option id="celci" value="celci">Celsius</option>
+          </select>
+        </div>
+      </div>
+      <button id="convert-btn">Convert</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
